@@ -1,0 +1,116 @@
+
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('/images/Neon\ Wall\ background.jpg');
+  background-repeat: cover;
+}
+
+html {
+  font-size: 10px;
+  font-family: "clip", sans-serif;
+
+}
+@font-face {
+  font-family: "clip";
+  src: url('/fonts/clip/Clip.ttf') format("truetype");
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+/* styles intro */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+
+ img  {
+  animation-name: example;
+  width: 400px;
+  height: 400px;
+  background-image: none;
+  animation-duration:3s;
+  animation-iteration-count: initial;
+  animation-delay: 3s;
+
+
+ }
+ a {
+  background-image: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+img:hover {
+  transition: all 2s ease-in-out;
+  transform: rotateY(360deg) scale(2);
+
+}
+
+@keyframes example {
+  0%,
+  100% {
+    transition: all 2s ease-in-out;
+    transform: rotateY(0deg) scale(1);
+  }
+
+  25% {
+    transition: all 2s ease-in-out;
+    transform: rotateY(360deg) scale(2);
+  }
+
+}
+
+/* styles index nav */
+
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-size: 3rem;
+
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+nav a {
+  background-color:hsl(187, 100%, 50%);
+  padding: 5px 10px;
+  color: rgb(255, 0, 255);
+  border-radius: 10px;
+  text-shadow: 1px 1px 15px black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: aqua;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  transition: all 0.5s ease;
+  background-image: none;
+}
+header h1 {
+  background-image: none;
+  border: 1px solid red;
+font-family: ;
+
+}
+
