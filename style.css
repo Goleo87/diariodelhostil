@@ -37,35 +37,41 @@ html {
   width: 400px;
   height: 400px;
   background-image: none;
-  animation-duration:3s;
+  animation-duration:4s;
   animation-iteration-count: initial;
   animation-delay: 3s;
 
 
  }
- a {
+ .link {
   background-image: none;
   text-decoration: none;
   font-weight: 600;
+  border: none;
+  background-color: none;
 }
 img:hover {
   transition: all 2s ease-in-out;
   transform: rotateY(360deg) scale(2);
 
+
 }
 
 @keyframes example {
   0%,
-  100% {
-    transition: all 2s ease-in-out;
+
+  50% {
+    transition: all 1s ease-in-out;
     transform: rotateY(0deg) scale(1);
   }
-
-  25% {
-    transition: all 2s ease-in-out;
+  75% {
+    transition: all 1s ease-in-out;
     transform: rotateY(360deg) scale(2);
   }
-
+  100% {
+    transition: all 1s ease-in-out;
+    transform: rotateY(0deg) scale(1);
+  }
 }
 
 /* styles index nav */
@@ -89,7 +95,7 @@ nav li {
 
 }
 
-nav a {
+nav .nav-elements {
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   color: rgb(0, 255, 255);
   text-shadow: 3px 3px 4px rgb(0, 0, 0);
@@ -126,7 +132,7 @@ nav a {
 }
 
 
- a:hover{
+ .nav-elements:hover {
   padding: 5px 5px;
   color: fuchsia;
   text-shadow: 1px 1px 2px rgb(255, 255, 255);
@@ -147,8 +153,123 @@ li:hover {
 }
 header h1 {
   background-image: none;
+  background-color: none
+  text-align: center;
   border: 1px solid red;
   border-radius: 30px;
-
+  font-size: 10rem;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+header .flicker-3 {
+  animation: flicker-3 2.5s ease-in-out infinite both;
+  background-image: none;
+  background-color: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 10rem;
+  text-align: center;
+  border-radius: 30px;
 }
 
+@keyframes flicker-3 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  32.98% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  34.02% {
+    opacity: 1;
+  }
+  34.98% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  35.9% {
+    opacity: 0;
+  }
+  35.92% {
+    opacity: 1;
+  }
+  38.98% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0;
+  }
+  39.8% {
+    opacity: 0;
+  }
+  39.82% {
+    opacity: 1;
+  }
+  83.98% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  84.9% {
+    opacity: 0;
+  }
+  84.92% {
+    opacity: 1;
+  }
+}
+footer {
+  background-color: none;
+  height: 15rem;
+  text-align: center;
+  padding-top: 1rem;
+  background-image: none;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  text-decoration: none;
+  list-style: none;
+  background-color: none;
+}
+
+li, i, a {
+  background-image: none;
+  color: rgb(0, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 3rem;
+  padding: 0 1rem 0 1rem;
+  transition: all 0.5s ease-in-out;
+  background-color: none;
+}
+.icon {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1.8rem;
+  background-image: none;
+}
+h2, h3 {
+  background-image: none;
+  color: rgb(0, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+  transition: all 0.5s ease-in-out;
+}
