@@ -6,13 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url('/images/Neon\ Wall\ background.jpg');
-  background-repeat: cover;
+
 }
 
 html {
   font-size: 10px;
   font-family: "clip", sans-serif;
+  background-image: url('/images/Neon\ Wall\ background.jpg');
+  background-repeat: cover;
 
 }
 @font-face {
@@ -32,7 +33,7 @@ html {
   height: 100vh;
  }
 
- img  {
+ .imgintro  {
   animation-name: example;
   width: 400px;
   height: 400px;
@@ -50,7 +51,7 @@ html {
   border: none;
   background-color: none;
 }
-img:hover {
+.imgintro:hover {
   transition: all 2s ease-in-out;
   transform: rotateY(360deg) scale(2);
 
@@ -98,14 +99,25 @@ nav li {
 nav .nav-elements {
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   color: rgb(0, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  text-shadow: 0 0 2px #000000, 0 0 10px #00eeff, 0 0 30px #00ffff;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: none;
   font-size: 5rem;
+  font-weight: 600;
+}
 
+nav {
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
 
 }
+
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -131,18 +143,17 @@ nav .nav-elements {
   }
 }
 
-
  .nav-elements:hover {
   padding: 5px 5px;
   color: fuchsia;
-  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  text-shadow: 0 0 10px #f700ff, 0 0 20px #fa71ff, 0 0 30px #f046ff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   background-image: none;
   border-radius: 30px;
   border:rgb(0, 238, 255);
-  border-style: solid;
-  border-width: 3px;
+  border-style:double;
+  border-width: 4px;
   transition: all 0.5s ease-in-out;
-  background-color: hsl(0, 0%, 0%, 0.5);
+  background-color:hsl(0, 0%, 0%);
 }
 li:hover {
   transform: scale(1.2);
@@ -151,23 +162,18 @@ li:hover {
   border-radius: 30px;
 
 }
-header h1 {
-  background-image: none;
-  background-color: none
+
+header {
+  width:100vw;
+  height: 10vh;
   text-align: center;
-  border: 1px solid red;
-  border-radius: 30px;
-  font-size: 10rem;
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  top: 10rem;
+  position: relative;
 }
-header .flicker-3 {
+ .flicker-3 {
   animation: flicker-3 2.5s ease-in-out infinite both;
-  background-image: none;
-  background-color: none;
-  border: none;
   color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  text-shadow: 0 0 10px #d400ff, 0 0 20px #00eeff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   font-size: 10rem;
   text-align: center;
   border-radius: 30px;
@@ -227,18 +233,74 @@ header .flicker-3 {
     opacity: 1;
   }
 }
-footer {
-  background-color: none;
-  height: 15rem;
-  text-align: center;
-  padding-top: 1rem;
+
+.gridsection {
   background-image: none;
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-  color: white;
+  text-align: center;
+  background-color: none;
+  border: 1px solid rgb(255, 255, 255);
+  width: 90vw;
+  height: 90vh;
+  margin: 15rem 10rem 10rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "daniela daniela1"
+    "daniela daniela1";
+
+}
+.daniela1, img, p {
+  width: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  grid-area: daniela;
+
+}
+p {
+  background-image: none;
+  color: rgb(0, 255, 255);
   text-shadow: 3px 3px 4px rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+  transition: all 3s ease-in-out;
+  background-color: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  border: 1px solid rgb(255, 255, 255);
+  position:relative;
+  bottom: 0;
+  width:100vw;
+  text-align: center;
 }
 
 .icon-list {
@@ -255,7 +317,6 @@ li, i, a {
   color: rgb(0, 255, 255);
   text-shadow: 3px 3px 4px rgb(0, 0, 0);
   font-size: 3rem;
-  padding: 0 1rem 0 1rem;
   transition: all 0.5s ease-in-out;
   background-color: none;
 }
