@@ -75,10 +75,11 @@ html {
 /* Navbar */
 
 nav{
-  height: 30%;
+  height: 10%;
   width: 100%;
-  position: fixed;
+  position:relative;
   top: 0;
+  flex-wrap: wrap;
 
 }
  ul {
@@ -87,7 +88,8 @@ nav{
   justify-content: center;
   padding: 0 0rem 0 1rem;
   align-items: center;
-  margin: 0 auto;
+  margin: 2.5rem auto;
+  flex-wrap: wrap;
 }
 
 li {
@@ -108,6 +110,7 @@ li {
   font-size: 5rem;
   font-weight: 600;
   margin: 1rem 1rem 3rem 1rem;
+  flex-wrap: wrap;
 }
 
 
@@ -153,15 +156,17 @@ header {
   width:100vw;
   height: 10vh;
   text-align: center;
-  top: 10rem;
+  margin: 0 auto;
   position: relative;
 }
  .flicker-3 {
+  position: relative;
   animation: flicker-3 2.5s ease-in-out infinite both;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #d400ff, 0 0 20px #00eeff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   font-size: 10rem;
   text-align: center;
+  justify-content: center;
   border-radius: 30px;
 }
 
@@ -219,15 +224,18 @@ header {
     opacity: 1;
   }
 }
-
+/*index grid container style */
 .gridsection {
   background-image: none;
   text-align: center;
   background-color: none;
-  border: 1px solid rgb(255, 255, 255);
-  width: 90vw;
-  height: 90vh;
-  margin: 15rem 10rem 10rem 10rem;
+  border: 5px solid rgb(255, 255, 255);
+  width: 80vw;
+  height: 80vh;
+  margin: 10rem auto 6rem auto;
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -241,30 +249,26 @@ header {
   grid-area: daniela;
 
 }
-p {
-  background-image: none;
-  color: rgb(0, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
-  font-size: 3rem;
-  text-align: center;
-  padding: 0 1rem 0 1rem;
-  transition: all 3s ease-in-out;
-  background-color: none;
-}
+
+
+
 .contact {
+  margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
   width: 60vw;
-  height: 80vh;
-  margin: 2rem auto;
-
-
+  backdrop-filter: blur(5px);
+  height: 70vh;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 form {
-  justify-content: left;
+  justify-content: center;
   text-align: left;
   width: 700px;
   height: 500px;
@@ -273,13 +277,23 @@ form {
   margin: 2rem auto;
 }
 #name {
-  width: 700px;
+  overflow: auto;
+  width: 450px;
+  height: 30px;
+  background-color: none;
+  color:#00ffff;
+  margin: 2rem auto;
+}
+#email {
+  overflow: auto;
+  width: 370px;
   height: 30px;
   background-color: none;
   color:#00ffff;
   margin: 2rem auto;
 }
 #message {
+  overflow: auto;
   width: 700px;
   height: 200px;
   background-color: none;
@@ -287,55 +301,78 @@ form {
   margin: 2rem auto;
 }
 .imputs {
+  overflow:auto;
   text-align: left;
   justify-content: justify;
   width: 700px;
   align-items: center;
 
 }
+button {
+  position: absolute;
+  margin: 0 25rem 0 25rem;
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  font-family: clip;
+  font-weight: 600;
+  color:#00ffff;
+  border-width: 4px;
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 25px;
+  border: #ffffff 5px solid;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 10px #ff00de;
+}
+button:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
+  border-radius: 25px;
+  border:rgb(255, 255, 255);
+  border-style:solid;
+  border-width: 4px;
+  color: #ffffff;
+  background-color:#000000;
+  text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
+}
 input, label {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 3rem 1rem;
 }
 
 footer {
   position:fixed;
   align-items: center;
   bottom: 0;
-  width:100vw;
+  width:15vw;
   text-align: center;
+  margin: 0 auto;
 }
 
 .icon-list {
-  display: flex;
-  width: 100%;
-  height: 10vh;
-}
-
-
-main {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 14vw;
+  height: 7vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: none;
+  margin: 0 auto;
 
 }
+
 .video-gallery {
+ margin: 5rem auto;
+  backdrop-filter: blur(5px);
+  display: flex;
+  overflow: auto;
   border: #ffffff 5px solid;
   border-radius: 50px;
-  display: flex;
   column-gap: 10px;
   width: 69%;
   height: 80vh;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
@@ -355,33 +392,31 @@ main {
 .spoty {
   width: 560px
   ;height: 161px;
-  overflow: hidden;
+
 }
 .face {
   width: 186.6px;
-  height: 476px;
-  overflow: hidden;
+  overflow: scroll;
+
 }
 
 .video-gallery-face {
-  border: #00eeff 1px solid;
+
   height: 315px;
-  overflow: hidden;
   padding: 0 auto;
   margin: auto 0;
   border-radius: 20px;
 }
 iframe {
-  border: #00eeff 1px solid;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   padding: 0 auto;
   margin: auto 0;
   border-radius: 20px;
 }
 iframe:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de, 0 0 80px #e100ff, 0 0 100px #770468, 0 0 110px #000000;
   border-radius: 25px;
@@ -390,7 +425,6 @@ iframe:hover {
   border-width: 4px;
 }
 .video-gallery-face:hover {
-  transform: scale(1);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de, 0 0 80px #e100ff, 0 0 100px #770468, 0 0 110px #000000;
   border-radius: 25px;
