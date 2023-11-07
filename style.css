@@ -264,32 +264,45 @@ p {
 
 }
 form {
-  justify-content: justify;
-  text-align: justify;
+  justify-content: left;
+  text-align: left;
   width: 700px;
   height: 500px;
   background-color: none;
-  border: 1px solid rgb(255, 255, 255);
+  color:#00ffff;
+  margin: 2rem auto;
+}
+#name {
+  width: 700px;
+  height: 30px;
+  background-color: none;
+  color:#00ffff;
+  margin: 2rem auto;
+}
+#message {
+  width: 700px;
+  height: 200px;
+  background-color: none;
   color:#00ffff;
   margin: 2rem auto;
 }
 .imputs {
-  text-align: justify;
+  text-align: left;
   justify-content: justify;
-  border: 1px solid rgb(255, 255, 255)
+  width: 700px;
   align-items: center;
 
 }
 input, label {
   font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
-  border: 1px solid rgb(255, 255, 255)
   align-items: center;
   margin: 1rem 1rem 1rem 1rem;
 }
 
 footer {
-  position:relative;
+  position:fixed;
   align-items: center;
   bottom: 0;
   width:100vw;
@@ -297,10 +310,9 @@ footer {
 }
 
 .icon-list {
-  border: #00eeff 1px solid;
+  display: flex;
   width: 100%;
   height: 10vh;
-
 }
 
 
@@ -316,18 +328,20 @@ main {
 
 }
 .video-gallery {
-  border: #00eeff 1px solid;
-  border-radius: 100px;
+  border: #ffffff 5px solid;
+  border-radius: 50px;
   display: flex;
-  gap: 10px;
-  width: 100%;
-  height: 75vh;
+  column-gap: 10px;
+  width: 69%;
+  height: 80vh;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
 }
+
 .video-gallery-item  {
-  border: #00eeff 1px solid;
   border-radius: 20px;
   width: 560px;
   height: 315px;
@@ -335,18 +349,15 @@ main {
   margin: auto 0;
 }
 .yout {
-  border: #00eeff 1px solid;
   width: 560px;
   height: 315px;
 }
 .spoty {
-  border: #00eeff 1px solid;
   width: 560px
   ;height: 161px;
   overflow: hidden;
 }
 .face {
-  border: #00eeff 1px solid;
   width: 186.6px;
   height: 476px;
   overflow: hidden;
@@ -354,8 +365,16 @@ main {
 
 .video-gallery-face {
   border: #00eeff 1px solid;
-  width: 570px;
   height: 315px;
+  overflow: hidden;
+  padding: 0 auto;
+  margin: auto 0;
+  border-radius: 20px;
+}
+iframe {
+  border: #00eeff 1px solid;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   padding: 0 auto;
   margin: auto 0;
@@ -369,6 +388,14 @@ iframe:hover {
   border:rgb(255, 255, 255);
   border-style:solid;
   border-width: 4px;
+}
+.video-gallery-face:hover {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de, 0 0 80px #e100ff, 0 0 100px #770468, 0 0 110px #000000;
+  border-radius: 25px;
+  border:rgb(255, 255, 255);
+  border-style:solid;
 }
 
 
