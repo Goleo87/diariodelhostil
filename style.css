@@ -82,6 +82,17 @@ nav{
   flex-wrap: wrap;
 
 }
+
+h1 > a {
+  text-decoration: none;
+
+}
+h4 {
+  font-size: 2rem;
+  color: rgb(0, 255, 255);
+  text-shadow:#000000;
+  text-align: center;
+}
  ul {
   animation: text-focus-in 1.5s ease-in-out cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   display: flex;
@@ -423,7 +434,42 @@ iframe:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: flex;
+   }
 
+   ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+   header {
+    flex-direction: column;
+    padding: 0.3em;
+    margin: 0.5em;
+    width: 25rem;
+    background: lightcyan;
+    border-radius: 0.3em;
+    text-align: center;
+    display: inline-block;
+}
+ body {
+
+ }
 }
 
 
