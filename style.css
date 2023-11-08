@@ -292,7 +292,6 @@ form {
   width: 450px;
   height: 30px;
   background-color: none;
-  color:#00ffff;
   margin: 2rem auto;
 }
 #email {
@@ -300,15 +299,14 @@ form {
   width: 370px;
   height: 30px;
   background-color: none;
-  color:#00ffff;
   margin: 2rem auto;
 }
 #message {
   overflow: auto;
   width: 700px;
   height: 200px;
+  font-size: 2rem;
   background-color: none;
-  color:#00ffff;
   margin: 2rem auto;
 }
 .imputs {
@@ -450,6 +448,11 @@ ul {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+
+}
+.nav-elements {
+  font-size: 4rem;
+
 }
 
 header {
@@ -462,8 +465,6 @@ header {
 
 li {
   margin: 1rem 0rem 1rem 0rem;
-  font-size: 3rem;
-  border-radius: 20px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -509,12 +510,12 @@ li {
 footer {
   position:fixed;
   padding: 0 auto;
-  top: 60vh;
   text-shadow: #000000 50px 50px 100px 100px;
   width:100vw;
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .icon-list {
   display: flex;
@@ -537,6 +538,7 @@ footer {
 }
 main {
   width: 100vw;
+  justify-content: center;
 }
 .about, .gridsection, .video-gallery {
   display: inline-block;
@@ -552,25 +554,20 @@ main {
 }
 .contact {
 width: 90vw;
-margin: 5rem auto 5rem auto;
 justify-content: center;
 align-items: center;
 text-align: center;
-overflow: hidden;
 }
 form  {
-  display: inline;
-  width: 85vw;
-  height: auto;
-  margin: 0 auto;
+  width: 90vw;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   overflow: hidden;
 }
 
 #name {
-  width: 100vw;
+  width: 70vw;
   height: 40px;
   background-color: none;
   justify-content: center;
@@ -578,39 +575,38 @@ form  {
 
 }
 #email {
-  width: 100vw;
+  width: 70vw;
   height: 40px;
-  background-color: none;
-  justify-content: center;
+  color:black;
 }
 
 #message {
-  width: 100vw;
+  left: 2rem;
+  width: 70vw;
+  height: 100px;
   background-color: none;
   font-size: 2rem;
-  outline-color: #ff00de;
+  outline-color: hsl(308, 100%, 50%, 0.5);
 }
-.imputs, h2 {
-  text-align: center;
-  justify-content: center;
+.imputs{
+  display: block;
   width: 100vw;
-  height: auto;
   align-items: center;
+  margin: 0 auto auto 4rem;
+  padding: 10rem auto 1rem 10rem;
+}
+.tittle {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+}
 
-}
-label {
-  overflow: hidden
-  text-align: center;
-  justify-content: center;
-  width: 100vw;
-  align-items: center;
-}
 button {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  display: block;
   align-items: center;
-  margin-left: 28%;
+  margin-left: 25%;
   margin-right: 30%;
 
 }
