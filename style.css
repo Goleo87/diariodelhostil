@@ -542,8 +542,8 @@ main {
   display: inline-block;
   flex-direction: row;
   width: 90vw;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
