@@ -363,13 +363,12 @@ footer {
 }
 
 .icon-list {
-  position:sticky;
-  width: 14vw;
+  display: block;
+  width: 100vw;
   height: 7vh;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .video-gallery {
@@ -438,16 +437,80 @@ iframe:hover {
     flex-direction: column;
     display: flex;
    }
+.flicker-3 {
+  position: relative;
+  top: 2rem;
+  font-size: 5rem;
+  justify-content: center;
+  border-radius: 30px;
+  width: 100%;
 
+}
    ul {
     display: block;
     position: absolute;
-    top: 50px;
-    left: 0;
+    justify-content: center;
     width: 100%;
-    background-color: #333;
     text-align: center;
+    top: 7rem;
+    left: 0;
   }
+
+  li {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 3rem;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  .gridsection {
+    top: 30rem;
+    left: 1rem;
+    right: 0rem;
+    width: 90%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
+  }
+
+footer {
+  position:absolute;
+  padding: 0 auto;
+  top: 40vh;
+  text-shadow: #000000 50px 50px 100px 100px;
+  width:100vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.icon-list {
+  display: block;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+ h3, h4 {
+  display: block;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: rgb(0, 255, 255);
+  text-align: center;
+  bottom: 0;
+  text-shadow: #000000 50px 50px 100px 100px;
+}
+
+
+
+
+
 
 
 
