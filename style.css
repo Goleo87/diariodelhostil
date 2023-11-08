@@ -604,9 +604,6 @@ text-align: center;
 }
 form  {
   width: 90vw;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
   overflow: hidden;
 }
 
@@ -615,13 +612,14 @@ form  {
   height: 40px;
   background-color: none;
   justify-content: center;
-
+  outline-color: hsl(308, 100%, 50%, 0.5);
 
 }
 #email {
   width: 70vw;
   height: 40px;
   color:black;
+  outline-color: hsl(308, 100%, 50%, 0.5);
 }
 
 #message {
@@ -633,26 +631,20 @@ form  {
   outline-color: hsl(308, 100%, 50%, 0.5);
 }
 .imputs{
-  display: block;
   width: 100vw;
-  align-items: center;
-  margin: 0 auto auto 4rem;
-  padding: 10rem auto 1rem 10rem;
+  margin-left: 8%;
 }
 .tittle {
   font-size: 4rem;
   color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
   text-align: center;
   padding: 0 1rem 2rem 1rem;
 }
 
 button {
-  display: block;
   align-items: center;
-  margin-left: 25%;
-  margin-right: 30%;
-
+  margin-left: 28%;
 }
 
 
