@@ -278,6 +278,9 @@ header {
   flex-wrap: wrap;
   overflow: auto;
 }
+
+
+
 form {
   justify-content: center;
   text-align: left;
@@ -287,12 +290,20 @@ form {
   color:#00ffff;
   margin: 2rem auto;
 }
+.tittle {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+}
 #name {
   overflow: auto;
   width: 450px;
   height: 30px;
   background-color: none;
   margin: 2rem auto;
+  outline-color: hsl(308, 100%, 50%, 0.5);
 }
 #email {
   overflow: auto;
@@ -300,6 +311,7 @@ form {
   height: 30px;
   background-color: none;
   margin: 2rem auto;
+  outline-color: hsl(308, 100%, 50%, 0.5);
 }
 #message {
   overflow: auto;
@@ -308,6 +320,7 @@ form {
   font-size: 2rem;
   background-color: none;
   margin: 2rem auto;
+  outline-color: hsl(308, 100%, 50%, 0.5);
 }
 .imputs {
   overflow:auto;
