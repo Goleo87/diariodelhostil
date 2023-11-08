@@ -12,13 +12,13 @@
 html {
   font-size: 10px;
   font-family: "clip", sans-serif;
-  background-image: url('/images/Neon\ Wall\ background.jpg');
+  background-image: url('images/background.jpg');
   background-repeat: cover;
 
 }
 @font-face {
   font-family: "clip";
-  src: url('/fonts/clip/Clip.ttf') format("truetype");
+  src: url('fonts/clip/Clip.ttf') format("truetype");
 }
 
 :root {
