@@ -454,22 +454,6 @@ iframe:hover {
     margin: 10px 0;
   }
 
-  input[type="checkbox"]:checked ~ ul {
-    display: block;
-  }
-   header {
-    flex-direction: column;
-    padding: 0.3em;
-    margin: 0.5em;
-    width: 25rem;
-    background: lightcyan;
-    border-radius: 0.3em;
-    text-align: center;
-    display: inline-block;
-}
- body {
-
- }
 }
 
 
