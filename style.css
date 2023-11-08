@@ -540,20 +540,64 @@ main {
   width: 100vw;
   justify-content: center;
 }
-.about, .gridsection, .video-gallery {
+.about, .gridsection {
   display: inline-block;
-  flex-direction: row;
   width: 90vw;
   margin-left: 1rem;
   margin-right: 1rem;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-
+  flex-wrap: wrap;
+  overflow: inherit;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+  border: #ffffff 5px solid;
 }
+.video-gallery {
+   margin-left: 4%;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   backdrop-filter: blur(5px);
+   display:inline-block;
+   overflow: inherit;
+   border: #ffffff 5px solid;
+   border-radius: 50px;
+   width: 90%;
+   height: 100%;
+   box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+ }
+
+ .video-gallery-item  {
+   margin-top: 5%;
+   width: 90%;
+   height: 100%;
+
+ }
+ .yout {
+   width: 100%;
+  margin-left: 5%;
+ }
+ .spoty {
+   width: 100%;
+   margin-left: 5%;
+ }
+ .face {
+  margin-left: 5%;
+   width: 390px;
+   height: 690px;
+
+ }
+ .video-gallery-face {
+   width: 100%;
+   gap: 10px;
+   height: 100%;
+   margin-bottom: 5%;
+ }
+
 .contact {
-width: 90vw;
+width: 90%;
+height: 100%;
 justify-content: center;
 align-items: center;
 text-align: center;
