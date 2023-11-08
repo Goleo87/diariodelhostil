@@ -433,37 +433,67 @@ iframe:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    display: flex;
+
+
+  nav {
+    position: static;
+    width: 100vw;
+    justify-content:center;
+    margin: 0 auto;
    }
-.flicker-3 {
-  position: relative;
-  top: 2rem;
-  font-size: 5rem;
+ul {
+  width: 100vw;
+  flex-direction: column;
+  justify-content:center;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+header {
+  position: static;
+  top:rem;
+  width:100vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li {
+  margin: 1rem 0rem 1rem 0rem;
+  font-size: 3rem;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+ .flicker-3 {
+  width: 100vw;
+  position: static;
+  font-size: 7rem;
+  text-align: center;
   justify-content: center;
   border-radius: 30px;
-  width: 100%;
+  width: 100vw;
 
 }
-   ul {
-    display: block;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    top: 7rem;
-    left: 0;
-  }
 
-  li {
-    margin: 1rem 0rem 1rem 0rem;
-    font-size: 3rem;
-    border-radius: 20px;
-    transition: all 0.5s ease-in-out;
+  .intro {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .imgintro {
+    width: 200px;
+    height: 200px;
+    animation: flicker-3 2.5s ease-in-out infinite both;
   }
   .gridsection {
-    top: 30rem;
+    top: 2rem;
     left: 1rem;
     right: 0rem;
     width: 90%;
@@ -477,9 +507,9 @@ iframe:hover {
   }
 
 footer {
-  position:absolute;
+  position:fixed;
   padding: 0 auto;
-  top: 40vh;
+  top: 60vh;
   text-shadow: #000000 50px 50px 100px 100px;
   width:100vw;
   text-align: center;
@@ -487,16 +517,15 @@ footer {
   align-items: center;
 }
 .icon-list {
-  display: block;
+  display: flex;
   width: 100vw;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-
-
-
+  margin: 0 auto;
 }
  h3, h4 {
-  display: block;
+  position: relative;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -506,17 +535,88 @@ footer {
   bottom: 0;
   text-shadow: #000000 50px 50px 100px 100px;
 }
+main {
+  width: 100vw;
+}
+.about, .gridsection, .video-gallery {
+  display: inline-block;
+  flex-direction: row;
+  width: 90vw;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+}
+.contact {
+width: 90vw;
+margin: 5rem auto 5rem auto;
+justify-content: center;
+align-items: center;
+text-align: center;
+overflow: hidden;
+}
+form  {
+  display: inline;
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#name {
+  width: 100vw;
+  height: 40px;
+  background-color: none;
+  justify-content: center;
 
 
+}
+#email {
+  width: 100vw;
+  height: 40px;
+  background-color: none;
+  justify-content: center;
+}
 
+#message {
+  width: 100vw;
+  background-color: none;
+  font-size: 2rem;
+  outline-color: #ff00de;
+}
+.imputs, h2 {
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  align-items: center;
 
-
-
-
+}
+label {
+  overflow: hidden
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28%;
+  margin-right: 30%;
 
 }
 
 
+}
 
 /* css media queries */
 /*no autoflow 100% width
