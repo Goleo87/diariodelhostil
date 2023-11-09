@@ -485,7 +485,7 @@ overflow: hidden;
 .parra {
   color: #ffffff;
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: justify;
   margin: 0 6rem 5rem 5rem;
 }
