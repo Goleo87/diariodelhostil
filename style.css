@@ -1,6 +1,5 @@
 
 
-/* CSS Reset */
 
 * {
   margin: 0;
@@ -122,10 +121,6 @@ li {
   margin: 1rem 1rem 3rem 1rem;
   flex-wrap: wrap;
 }
-
-
-
-
  .nav-elements:hover {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #00eeff, 0 0 20px #fa71ff, 0 0 30px #f046ff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
@@ -335,11 +330,11 @@ header {
 
 /*index grid container style */
 .gridsection {
-  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: flicker-in-1 2s linear 1s both;
   background-image: none;
   text-align: center;
   background-color: none;
-  border: 5px solid rgb(255, 255, 255);
+  border: 6px solid rgb(255, 255, 255);
   width: 90vw;
   height: 80vh;
   margin: 10rem auto 10rem auto;
@@ -347,51 +342,93 @@ header {
   backdrop-filter: blur(5px);
   box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr,2);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "daniela daniela1"
-    "daniela daniela1";
-
+    "daniela quote1 quote1"
+    "quote2 quote2 stefano";
+overflow: hidden;
 }
 .daniela1 {
+  margin: 0 auto 0 auto;
   width: 100%;
+  height: 100%;
   grid-area: daniela;
-  border: #00eeff 5px solid;
   overflow: hidden;
+  background: none
 
 }
-
-.photo {
-  margin: 5rem auto 5rem auto;
-  width: 30rem;
-  height: 30rem;
+.stefano1 {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 100%;
+  grid-area: stefano;
+  overflow: hidden;
+  background:none;
+}
+.quote1 {
+  grid-area: quote1;
+  background-color: none;
+}
+.quote2 {
+  grid-area: quote2;
+  background-color: none;
+}
+.photo1 {
+  margin: 4rem 4rem 4rem 4rem;
+  width: 80%;
+  height: 80%;
   border-radius: 50% 50%;
   border: #fcffff 7px solid;
   overflow: hidden;
-  box-shadow: #f046ff 0px 0px 10px 0px, #f046ff 0px 0px 20px 0px, #f046ff 0px 0px 30px 0px, #f046ff 0px 0px 40px 0px, #f046ff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
+  box-shadow: #f046ff 0px 0px 10px 0px, #f046ff 0px 0px 20px 0px, #f046ff 0px 0px 30px 0px, #f046ff 0px 0px 40px 0px, #f046ff 0px 0px 50px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 80px 0px;
+  animation: flicker-in-1 2s linear 3s both;
+}
+.photo2 {
+  margin: 4rem 4rem 4rem 4rem;
+  width: 80%;
+  height: 80%;
+  border-radius: 50% 50%;
+  border: #fcffff 7px solid;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
   animation: flicker-in-1 2s linear 3s both;
 }
 
 #dany {
-  margin-top: -10rem;
   width: 30rem;
   height: auto;
+  background-color: none;
+
+}
+#fano {
+  width: 30rem;
+  height: auto;
+  background-color: none;
 
 }
 
-p {
-  font-size: 2rem;
+.quote1 {
+  margin: 10rem auto 5rem auto;
+  font-size: 8rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
   text-align: center;
-  padding: 0 1rem 2rem 1rem;
+  animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
+}
+.quote2 {
+  margin: 10rem auto 5rem auto;
+  font-size: 8rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
+  animation: flicker-in-1 2s linear 3s both;
+  text-align: center;
   animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
 }
 
 
 .contact {
-  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: flicker-in-1 2s linear 1s both;
   margin: 10rem auto 10rem auto;
   display: flex;
   justify-content: center;
@@ -407,7 +444,57 @@ p {
   overflow: auto;
 }
 
+.about {
+  animation: flicker-in-1 2s linear 1s both;
+  background-image: none;
+  text-align: center;
+  background-color: none;
+  border: 6px solid rgb(255, 255, 255);
+  width: 90vw;
+  height: 80vh;
+  margin: 10rem auto 10rem auto;
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "logo logo logo logo"
+    "texto texto texto texto";
+overflow: hidden;
 
+}
+.logot{
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 100%;
+  grid-area: logo;
+  background: none
+
+}
+
+.bio {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 100%;
+  animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
+  grid-area: texto;
+  background-color: none;
+}
+.parra {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+  font-size: 5rem;
+  text-align: justify;
+  margin: 0 6rem 5rem 5rem;
+}
+
+#diari {
+  margin: 4rem auto 4rem auto;
+  width: 15%;
+  animation: flicker-in-1 2s linear 3s both;
+}
 
 form {
   justify-content: center;
@@ -417,6 +504,7 @@ form {
   background-color: none;
   color:#00ffff;
   margin: 2rem auto;
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 .tittle {
   font-size: 5rem;
@@ -511,7 +599,7 @@ footer {
 }
 
 .video-gallery {
-  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: flicker-in-1 2s linear 1s both;
   margin: 10rem auto 10rem auto;
   backdrop-filter: blur(5px);
   display: flex;
@@ -532,7 +620,7 @@ footer {
   width: 560px;
   height: 315px;
   padding: 0 auto;
-
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 .yout {
   width: 560px;
@@ -553,6 +641,7 @@ footer {
   height: 315px;
   padding: 0 auto;
   border-radius: 20px;
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 iframe {
   width: 100%;
@@ -571,6 +660,46 @@ iframe:hover {
   border-style:solid;
   border-width: 4px;
 }
+
+footer {
+  position:relative;
+  bottom: 0;
+  width:100vw;
+  text-align: center;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  text-decoration: none;
+  list-style: none;
+  background-color: none;
+}
+
+li, i, a {
+  background-image: none;
+  color: rgb(0, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 3rem;
+  transition: all 0.5s ease-in-out;
+  background-color: none;
+}
+.icon {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1.8rem;
+  background-image: none;
+}
+h2, h3 {
+  background-image: none;
+  color: rgb(0, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -680,17 +809,23 @@ footer {
 main {
   width: 100vw;
   justify-content: center;
+  box-shadow: none;
+  border: none;
+  margin: 0 auto;
 }
 .about, .gridsection {
   display: inline-block;
   width: 90vw;
+  height: 100%;
+  margin-top: 4rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 4rem;
   justify-content: left;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  overflow: inherit;
+  overflow: visible;
   border-radius: 25px;
   box-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
   border: #ffffff 5px solid;
@@ -788,66 +923,17 @@ button {
   margin-left: 28%;
 }
 
-
+#diari {
+  margin: 0 auto;
+  width: 40%;
+  animation: flicker-in-1 2s linear 3s both;
+}
+.parra {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+  font-size: 2.5rem;
+  text-align: justify;
+  margin: 4rem 4rem 4rem 4rem;
 }
 
-/* css media queries */
-/*no autoflow 100% width
-no scrool
-/* css media queries */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-  position:relative;
-  bottom: 0;
-  width:100vw;
-  text-align: center;
-}
-
-.icon-list {
-  display: flex;
-  justify-content: center;
-  background-image: none;
-  text-decoration: none;
-  list-style: none;
-  background-color: none;
-}
-
-li, i, a {
-  background-image: none;
-  color: rgb(0, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
-  font-size: 3rem;
-  transition: all 0.5s ease-in-out;
-  background-color: none;
-}
-.icon {
-  margin: 0 0.5rem 0 0.5rem;
-  font-size: 1.8rem;
-  background-image: none;
-}
-h2, h3 {
-  background-image: none;
-  color: rgb(0, 255, 255);
-  text-shadow: 3px 3px 4px rgb(0, 0, 0);
-  font-size: 3rem;
-  text-align: center;
-  padding: 0 1rem 0 1rem;
-  transition: all 0.5s ease-in-out;
 }
