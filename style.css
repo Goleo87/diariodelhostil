@@ -335,81 +335,73 @@ header {
   text-align: center;
   background-color: none;
   border: 6px solid rgb(255, 255, 255);
-  width: 90vw;
-  height: 80vh;
+  width: 85vw;
+  height: 90vh;
   margin: 10rem auto 10rem auto;
+  padding: 0 auto;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
   display: grid;
-  grid-template-columns: repeat(1fr,2);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "daniela quote1 quote1"
     "quote2 quote2 stefano";
-overflow: hidden;
+  overflow:auto;
 }
-.daniela1 {
-  margin: 0 auto 0 auto;
-  width: 100%;
-  height: 100%;
-  grid-area: daniela;
-  overflow: hidden;
-  background: none
 
-}
-.stefano1 {
-  margin: 0 auto 0 auto;
-  width: 100%;
-  height: 100%;
-  grid-area: stefano;
-  overflow: hidden;
-  background:none;
-}
-.quote1 {
-  grid-area: quote1;
-  background-color: none;
-}
-.quote2 {
-  grid-area: quote2;
-  background-color: none;
-}
 .photo1 {
-  margin: 4rem 4rem 4rem 4rem;
-  width: 80%;
-  height: 80%;
-  border-radius: 50% 50%;
+  grid-area: daniela;
+  margin-left: 20rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   border: #fcffff 7px solid;
   overflow: hidden;
   box-shadow: #f046ff 0px 0px 10px 0px, #f046ff 0px 0px 20px 0px, #f046ff 0px 0px 30px 0px, #f046ff 0px 0px 40px 0px, #f046ff 0px 0px 50px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 80px 0px;
   animation: flicker-in-1 2s linear 3s both;
 }
 .photo2 {
-  margin: 4rem 4rem 4rem 4rem;
-  width: 80%;
-  height: 80%;
-  border-radius: 50% 50%;
+  grid-area: stefano;
+  margin-left: 10rem;
+  margin-right: 20rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   border: #fcffff 7px solid;
   overflow: hidden;
   box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
   animation: flicker-in-1 2s linear 3s both;
+  background: none;
 }
 
 #dany {
-  width: 30rem;
+  width: 100%;
   height: auto;
-  background-color: none;
+  background: none;
 
 }
 #fano {
-  width: 30rem;
+  width: 100%;
   height: auto;
-  background-color: none;
+  background: none;
 
 }
 
 .quote1 {
-  margin: 10rem auto 5rem auto;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  padding: 5rem 30rem 1rem 5rem;
+  width: 100%;
+  grid-area: quote1;
+  background-color: none;
   font-size: 8rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
@@ -417,7 +409,14 @@ overflow: hidden;
   animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
 }
 .quote2 {
-  margin: 10rem auto 5rem auto;
+  margin-top: 4rem;
+  padding: 5rem 1rem 0rem 5rem;
+  margin-left: 20rem;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  width: 80%;
+  grid-area: quote2;
+  background-color: none;
   font-size: 8rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
@@ -462,7 +461,7 @@ overflow: hidden;
   grid-template-areas:
     "logo logo logo logo"
     "texto texto texto texto";
-overflow: hidden;
+overflow: auto;
 
 }
 .logot{
@@ -858,28 +857,21 @@ main {
    width: 100%;
    margin-left: 5%;
  }
- .face {
-  margin-left: 5%;
-   width: 390px;
-   height: 690px;
-
- }
  .video-gallery-face {
-   width: 100%;
-   gap: 10px;
-   height: 100%;
-   margin-bottom: 5%;
+  display: none;
+
  }
 
 .contact {
-width: 90%;
-height: 100%;
+width: 90vw;
+height: 100vh;
 justify-content: center;
 align-items: center;
 text-align: center;
 }
 form  {
   width: 90vw;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -935,17 +927,42 @@ button {
   text-align: justify;
   margin: 4rem 4rem 4rem 4rem;
 }
+.photo1 {
+  grid-area: daniela;
+  margin: 4rem auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: #fcffff 7px solid;
+  overflow: hidden;
+  box-shadow: #f046ff 0px 0px 10px 0px, #f046ff 0px 0px 20px 0px, #f046ff 0px 0px 30px 0px, #f046ff 0px 0px 40px 0px, #f046ff 0px 0px 50px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 80px 0px;
+  animation: flicker-in-1 2s linear 3s both;
+}
+.photo2 {
+  grid-area: stefano;
+  margin: 4rem auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: #fcffff 7px solid;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
+  animation: flicker-in-1 2s linear 3s both;
+  background: none;
+}
+
 .quote1 {
-  margin: 10rem auto 5rem auto;
-  font-size: 3rem;
+  padding: 4rem 1rem 0rem 1rem;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
   text-align: center;
   animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
 }
 .quote2 {
-  margin: 10rem auto 5rem auto;
-  font-size: 3rem;
+  margin: 1rem auto 1rem auto;
+  padding: 1rem 1rem 0rem 1rem;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
   animation: flicker-in-1 2s linear 3s both;
