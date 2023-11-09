@@ -94,7 +94,6 @@ h4 {
   text-align: center;
 }
  ul {
-  animation: text-focus-in 1.5s ease-in-out cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   display: flex;
   justify-content: center;
   padding: 0 0rem 0 1rem;
@@ -113,7 +112,7 @@ li {
 }
 
 .nav-elements {
-  animation: text-focus-in 1.5s ease-in-out cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   color: rgb(0, 255, 255);
   text-shadow: 0 0 10px #000000, 0 0 10px #00eeff, 0 0 30px #00ffff;
   text-transform: uppercase;
@@ -125,30 +124,7 @@ li {
 }
 
 
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
+
 
  .nav-elements:hover {
   color: rgb(255, 255, 255);
@@ -235,15 +211,138 @@ header {
     opacity: 1;
   }
 }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+            transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /*index grid container style */
 .gridsection {
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
   background-image: none;
   text-align: center;
   background-color: none;
   border: 5px solid rgb(255, 255, 255);
-  width: 80vw;
+  width: 90vw;
   height: 80vh;
-  margin: 10rem auto 6rem auto;
+  margin: 10rem auto 10rem auto;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
@@ -255,16 +354,45 @@ header {
     "daniela daniela1";
 
 }
-.daniela1, img, p {
-  width: 50%;
+.daniela1 {
+  width: 100%;
   grid-area: daniela;
+  border: #00eeff 5px solid;
+  overflow: hidden;
 
 }
 
+.photo {
+  margin: 5rem auto 5rem auto;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50% 50%;
+  border: #fcffff 7px solid;
+  overflow: hidden;
+  box-shadow: #f046ff 0px 0px 10px 0px, #f046ff 0px 0px 20px 0px, #f046ff 0px 0px 30px 0px, #f046ff 0px 0px 40px 0px, #f046ff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
+  animation: flicker-in-1 2s linear 3s both;
+}
+
+#dany {
+  margin-top: -10rem;
+  width: 30rem;
+  height: auto;
+
+}
+
+p {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 70px #000000, 0 0 80px #ff00de, 0 0 100px #000000, 0 0 150px #000000;
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+  animation: fade-in-bck 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
+}
 
 
 .contact {
-  margin: 5rem auto;
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  margin: 10rem auto 10rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,7 +511,8 @@ footer {
 }
 
 .video-gallery {
- margin: 10rem auto;
+  animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  margin: 10rem auto 10rem auto;
   backdrop-filter: blur(5px);
   display: flex;
   overflow: auto;
@@ -469,11 +598,11 @@ ul {
 }
 
 header {
+  margin: 4rem auto 0 auto;
   position: static;
   top:rem;
   width:100vw;
   text-align: center;
-  margin: 0 auto;
 }
 
 li {
@@ -485,11 +614,10 @@ li {
  .flicker-3 {
   width: 100vw;
   position: static;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
   justify-content: center;
   border-radius: 30px;
-  width: 100vw;
 
 }
 
