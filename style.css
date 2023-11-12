@@ -325,14 +325,11 @@ header {
 /*index grid container style */
 .gridsection {
   animation: flicker-in-1 2s linear 1s both;
-  background-image: none;
   text-align: center;
-  background-color: none;
   border: 6px solid rgb(255, 255, 255);
-  width: 85vw;
+  width: 90%;
   height: 90vh;
   margin: 10rem auto 10rem auto;
-  padding: 0 auto;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
@@ -344,7 +341,14 @@ header {
     "quote2 quote2 stefano";
   overflow:auto;
 }
-
+main {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
 .photo1 {
   grid-area: daniela;
   margin-left: 20rem;
@@ -443,7 +447,7 @@ header {
   border: 6px solid rgb(255, 255, 255);
   width: 90vw;
   height: 80vh;
-  margin: 6rem auto 4rem auto;
+  margin: 10rem auto 10rem auto;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: #00ffff 0px 0px 10px 0px, #00ffff 0px 0px 20px 0px, #00ffff 0px 0px 30px 0px, #00ffff 0px 0px 40px 0px, #00ffff 0px 0px 70px 0px, #000000 0px 0px 80px 0px, #000000 0px 0px 100px 0px, #000000 0px 0px 150px 0px;
@@ -490,6 +494,7 @@ form {
   justify-content: center;
   text-align: left;
   width: 700px;
+  height: 550px;
   color:#00ffff;
   margin: 2rem auto 2rem auto;
   animation: text-focus-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
@@ -529,16 +534,14 @@ form {
 
 }
 .imputs {
-  overflow:auto;
   text-align: left;
-  justify-content: justify;
-  width: 700px;
   align-items: center;
 
 }
 button {
   position: absolute;
-  margin: 0 25rem 0 25rem;
+  margin: 1rem auto auto 25rem;
+  align-items: center;
   width: 200px;
   height: 50px;
   font-size: 2rem;
@@ -562,14 +565,20 @@ button:hover {
   background-color:#000000;
   text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff, 0 0 40px #00ffff, 0 0 70px #ff00de;
 }
-input, label {
+label {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   align-items: center;
-  margin: 0rem 1rem 3rem 1rem;
+  margin: 0rem auto 0rem auto;
 }
-
+input {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  margin: 0rem auto 0rem auto;
+}
 footer {
   position:fixed;
   align-items: center;
@@ -697,7 +706,7 @@ h2, h3 {
     position: static;
     width: 100vw;
     justify-content:center;
-    margin: 0 auto;
+    margin: 5rem auto;
     transition: none;
     animation:none;
    }
@@ -816,7 +825,7 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 }
 .icon-list {
   display: flex;
@@ -862,9 +871,9 @@ main {
   border: #ffffff 5px solid;
 }
 .video-gallery {
-   margin-left: 4%;
-   margin-top: 10%;
-   margin-bottom: 10%;
+   margin-left: 3%;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
    backdrop-filter: blur(5px);
    display:inline-block;
    overflow: inherit;
@@ -877,14 +886,14 @@ main {
 
  .video-gallery-item  {
    margin-top: 5%;
-   margin-left: 1rem;
+   margin-left: 0rem;
    width: 90%;
    height: 100%;
 
  }
  .yout {
    width: 100%;
-  margin-left: 5%;
+   margin-left: 5%;
  }
  .spoty {
    width: 100%;
@@ -903,9 +912,12 @@ align-items: center;
 text-align: center;
 }
 form  {
-  width: 90vw;
-  height: 70vh;
-  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
 }
 
 #name {
@@ -924,17 +936,19 @@ form  {
 }
 
 #message {
-  left: 2rem;
   width: 70vw;
   height: 100px;
-  background-color: none;
   font-size: 2rem;
   outline-color: hsl(308, 100%, 50%, 0.5);
 }
 .imputs{
-  width: 100vw;
-  margin-left: 8%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
 }
+
 .tittle {
   font-size: 4rem;
   color: rgb(255, 255, 255);
@@ -944,8 +958,11 @@ form  {
 }
 
 button {
+  position: absolute;
+  margin: 5rem auto auto 9rem;
   align-items: center;
-  margin-left: 28%;
+  justify-content: center;
+  justify-items: center;
 }
 .bio {
   animation: none;
